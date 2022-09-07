@@ -3,16 +3,18 @@
   margin: 0%;
   padding: 0%;
 }
-.about-container {
+body {
   background-image: url("https://learnenglishteens.britishcouncil.org/sites/teens/files/styles/article/public/field/image/rs2769_186088062-low_0.jpg?itok=Q-Ge438i");
   background-repeat: no-repeat;
   background-color: rgba(190, 186, 186, 0.3);
   background-size: cover;
+}
+.about-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 .about-card-container {
   width: 300px;
@@ -39,6 +41,12 @@
   background-position: 0px -25px;
   border: 2px solid rgba(96, 29, 159, 0.3);
   box-shadow: 0 0 10px 2px;
+}
+.about-card-container .profil-foto:hover {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-position: 0 -35px;
 }
 .footer-navbar a {
   display: inline-block;
@@ -83,9 +91,11 @@ legend {
   color: white;
 }
 .about-page-info {
-  padding: 50px;
+  padding: 50px ;
+  
 }
 .about-page-info fieldset {
+  
   padding: 20px;
   border-radius: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -99,10 +109,17 @@ nav a.active {
   background-color: rgba(201, 208, 215, 0.6);
   color: rgba(59, 13, 102, 0.8);
 }
-.about-card-container .name-job p:hover{
+.about-card-container .name-job p:hover {
   color: rgb(43, 64, 226);
   font-size: large;
   font-weight: 600;
+}
+.about-card-container .icons a:hover {
+  font-size: x-large;
+}
+.about-table-person , td{
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
 @media screen and (max-width: 800px) {

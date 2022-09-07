@@ -51,6 +51,13 @@ body{
   border: 2px solid rgba(96, 29, 159, 0.3);
   box-shadow: 0 0 10px 2px;
 }
+.contact-card-container .profil-foto:hover{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-position: 0 -35px ;
+  
+}
 .footer-navbar a {
   display: inline-block;
   display: flex;
@@ -128,15 +135,28 @@ nav a.active {
   color: white;
 }
 .contact-summary {
-  color: red;
-  font-size: x-large;
+  color: white;
+  font-size: large;
 }
 .contact-card-container .name-job p:hover{
   color: rgb(43, 64, 226);
   font-size: large;
   font-weight: 600;
 }
-
+.contact-fieldset-inline{
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px;
+}
+.contact-fieldset-inline legend{
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+.contact-fieldset-outside legend{
+  font-size: 20px;
+  font-weight: 700;
+  
+}
 .form-container label {
   display: inline-block;
   width: 100px;
@@ -156,7 +176,9 @@ nav a.active {
 .form-container div {
   margin: 10px 0;
 }
-
+.contact-card-container .icons a:hover{
+  font-size: x-large;
+}
 @media screen and (max-width: 800px) {
   .contact-container {
     display: flex;

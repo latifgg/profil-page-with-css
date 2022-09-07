@@ -39,6 +39,13 @@
   border: 2px solid rgba(96, 29, 159, 0.3);
   box-shadow: 0 0 10px 2px;
 }
+.card-container .profil-foto:hover{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-position: 0 -35px ;
+  
+}
 .footer-navbar a {
   display: inline-block;
   display: flex;
@@ -48,7 +55,6 @@
   padding: 10px 6px;
   border-radius: 5px;
   color: white;
-  
 }
 .footer-navbar {
   display: flex;
@@ -76,18 +82,17 @@ nav a:hover {
   background-color: rgb(170, 137, 200);
   color: rgb(126, 18, 227);
 }
-nav a.active{
+nav a.active {
   background-color: rgba(143, 163, 183, 0.6);
   color: rgba(59, 13, 102, 0.8);
 }
 
-.card-container .name-job p:hover{
+.card-container .name-job p:hover {
   color: rgb(43, 64, 226);
   font-size: large;
   font-weight: 600;
 }
-.card-container .profil-foto:hover::after{
-content: "*LatifGüngör*";
-color: red;
-font-size: larger;
+.card-container .icons a:hover{
+  font-size: x-large;
 }
+
