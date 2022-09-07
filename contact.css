@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-image: url("https://pngimg.com/uploads/world_map/world_map_PNG3.png");
+  background-color: rgba(32, 28, 28, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(81, 203, 199, 0.6);
+}
+.contact-container {
+  
+  /* background-image: radial-gradient( rgb(75, 75, 139), rgb(33, 46, 33)); */
+  background-position: top;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+}
+.contact-card-container {
+  width: 300px;
+  height: 500px;
+  margin: 50px;
+  padding-top: 20px;
+  border: 1px dotted blueviolet;
+  outline: 10px solid rgba(168, 175, 182, 0.6);
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 25px 20px; */
+  background-color: rgba(225, 225, 220, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  right: 0%;
+  top: 0%;
+}
+.profil-foto {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-image: url("foto-profil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -25px;
+  border: 2px solid rgba(96, 29, 159, 0.3);
+  box-shadow: 0 0 10px 2px;
+}
+.footer-navbar a {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 0 9px;
+  background-color: blueviolet;
+  padding: 10px 6px;
+  border-radius: 5px;
+  color: white;
+}
+.footer-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.pages {
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 1px dotted rgba(130, 55, 201, 0.6);
+}
+.name-job {
+  text-align: center;
+}
+.icons a {
+  margin: 0 10px;
+}
+h2,
+h3 {
+  color: blueviolet;
+}
+p {
+  color: rgba(18, 5, 64, 0.8);
+}
+nav a:hover {
+  background-color: rgb(170, 137, 200);
+  color: rgb(126, 18, 227);
+}
+.contact-page-info p,
+fieldset,
+legend {
+  color: white;
+}
+.contact-page-info {
+  padding: 50px;
+  height: auto;
+}
+.contact-page-info .contact-fieldset-outside {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(131, 75, 183, 0.6);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 500px;
+  height: 100%;
+  position: relative;
+  left: -200px;
+}
+nav a.active {
+  background-color: rgba(201, 208, 215, 0.6);
+  color: rgba(59, 13, 102, 0.8);
+}
+.contact-navbar {
+  background-color: rgb(94, 25, 158);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+.contact-navbar a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+.contact-summary {
+  color: red;
+  font-size: x-large;
+}
+.contact-card-container .name-job p:hover{
+  color: rgb(43, 64, 226);
+  font-size: large;
+  font-weight: 600;
+}
+
+.form-container label {
+  display: inline-block;
+  width: 100px;
+  margin: 0 20px;
+}
+.form-container button {
+  float: right;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+}
+.form-container input {
+  width: 298px;
+}
+.form-container div {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .contact-card-container {
+    position: relative;
+  }
+  .contact-container .contact-page-info .contact-fieldset-outside {
+    background-color: rgba(181, 131, 228, 0.6);
+  }
+  .contact-page-info {
+    position: relative;
+    left: 200px;
+  }
+  .contact-fieldset-inline {
+    position: relative;
+    left: 0px;
+  }
+}

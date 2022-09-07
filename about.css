@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+.about-container {
+  background-image: url("https://learnenglishteens.britishcouncil.org/sites/teens/files/styles/article/public/field/image/rs2769_186088062-low_0.jpg?itok=Q-Ge438i");
+  background-repeat: no-repeat;
+  background-color: rgba(190, 186, 186, 0.3);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.about-card-container {
+  width: 300px;
+  height: 500px;
+  margin: 50px;
+  padding-top: 20px;
+  border: 1px dotted blueviolet;
+  outline: 10px solid rgba(168, 175, 182, 0.6);
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 25px 20px; */
+  background-color: rgba(225, 225, 220, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.profil-foto {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-image: url("foto-profil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -25px;
+  border: 2px solid rgba(96, 29, 159, 0.3);
+  box-shadow: 0 0 10px 2px;
+}
+.footer-navbar a {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 0 10px;
+  background-color: blueviolet;
+  padding: 10px 6px;
+  border-radius: 5px;
+  color: white;
+}
+.footer-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.pages {
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 1px dotted rgba(130, 55, 201, 0.6);
+}
+.name-job {
+  text-align: center;
+}
+.icons a {
+  margin: 0 10px;
+}
+h2,
+h3 {
+  color: blueviolet;
+}
+p {
+  color: rgba(18, 5, 64, 0.8);
+}
+nav a:hover {
+  background-color: rgb(170, 137, 200);
+  color: rgb(126, 18, 227);
+}
+.about-page-info p,
+fieldset,
+legend {
+  color: white;
+}
+.about-page-info {
+  padding: 50px;
+}
+.about-page-info fieldset {
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(21, 5, 36);
+}
+.about-page-info details summary {
+  color: rgb(21, 5, 36);
+  font-size: larger;
+}
+nav a.active {
+  background-color: rgba(201, 208, 215, 0.6);
+  color: rgba(59, 13, 102, 0.8);
+}
+.about-card-container .name-job p:hover{
+  color: rgb(43, 64, 226);
+  font-size: large;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .about-page-info fieldset {
+    background-color: rgba(125, 48, 198, 0.7);
+  }
+}
