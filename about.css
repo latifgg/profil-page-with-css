@@ -90,16 +90,20 @@ fieldset,
 legend {
   color: white;
 }
+.about-page-info legend {
+  color: black;
+  font-size: larger;
+  font-weight: 700;
+}
 .about-page-info {
-  padding: 50px ;
-  
+  padding: 50px;
 }
 .about-page-info fieldset {
-  
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 5px 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(21, 5, 36);
+  color: white;
 }
 .about-page-info details summary {
   color: rgb(21, 5, 36);
@@ -117,9 +121,44 @@ nav a.active {
 .about-card-container .icons a:hover {
   font-size: x-large;
 }
-.about-table-person , td{
-  border: 1px solid black;
+.about-table-person,
+.about-job,
+.about-education,
+.about-language,
+.about-goal,
+td {
+  border: 2px solid blueviolet;
   border-collapse: collapse;
+  background-color: rgba(80, 50, 108, 0.5);
+}
+.about-table-person,
+.about-job,
+.about-education,
+.about-language,
+.about-goal {
+  width: 100%;
+}
+.about-table-person tr:nth-child(2n + 1) {
+  background-color: rgba(80, 50, 108, 0.9);
+}
+.about-table-person tr:nth-child(2n + 1):hover {
+  background-color: white;
+  color: blueviolet;
+}
+.about-table-person tr:nth-child(2n + 2):hover {
+  background-color: rgb(153, 112, 192);
+  color: black;
+}
+.about-job tr:nth-child(2n + 1) {
+  background-color: rgba(80, 50, 108, 0.9);
+}
+.about-job tr:nth-child(2n + 1):hover {
+  background-color: white;
+  color: blueviolet;
+}
+.about-job tr:nth-child(2n + 2):hover {
+  background-color: rgb(153, 112, 192);
+  color: black;
 }
 
 @media screen and (max-width: 800px) {
